@@ -4,7 +4,10 @@
 
 'use strict';
 
-var app = angular.module('starter', ['ionic']);
+var app = angular.module('starter', [
+  'ionic',
+  'ngAnimate'
+  ]);
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

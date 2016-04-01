@@ -9732,14 +9732,15 @@ a.button {
   transition-duration: 0s; }
 
 html, body {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #fff; }
 
 .login-page {
   background-image: url("../img/leaf_blur.jpg");
   background-size: auto 100%; }
   .login-page .brand-info-container {
     text-align: center;
-    margin: 7vh 0 10vh 0; }
+    margin: 7vh 0 7vh 0; }
     .login-page .brand-info-container img.brand-logo {
       max-width: 150px; }
     .login-page .brand-info-container .brand-content {
@@ -9748,34 +9749,59 @@ html, body {
       font-weight: bold;
       font-style: italic; }
   .login-page .auth-container {
-    /*
-		.col {
-			display: flex;
-		}
-		
-		p.form-button {
-			text-align: center;
-			margin: auto;
-			display: table-cell;
-			border-bottom: 2px solid black;
-			padding: 0 0 3px 0;
-		}
-
-		p.form-button.selected
-		}
-		*/ }
+    position: relative; }
+    .login-page .auth-container ::-webkit-input-placeholder {
+      color: #fff; }
+    .login-page .auth-container :-moz-placeholder {
+      color: #fff; }
+    .login-page .auth-container ::-moz-placeholder {
+      color: #fff; }
+    .login-page .auth-container :-ms-input-placeholder {
+      color: #fff; }
     .login-page .auth-container .col {
       display: flex;
       justify-content: center; }
     .login-page .auth-container p.form-button {
       text-align: center;
-      opacity: 0.7;
       font-size: 1.2em;
       display: table-cell;
-      padding: 0 0 3px 0; }
+      padding: 0 0 3px 0;
+      color: #fff;
+      font-weight: bold; }
     .login-page .auth-container p.form-button.selected {
-      border-bottom: 2px solid black; }
+      border-bottom: 2px solid #fff;
+      opacity: 1.0; }
     .login-page .auth-container p.form-button.selected:after {
       content: '';
       display: table-cell;
       width: 100%; }
+    .login-page .auth-container .item-input {
+      color: white;
+      border: none;
+      border-bottom: 1px solid #fff;
+      width: 85%;
+      margin: 0 auto; }
+      .login-page .auth-container .item-input span {
+        color: #fff; }
+      .login-page .auth-container .item-input input {
+        color: #fff; }
+    .login-page .auth-container button {
+      margin: 35px auto;
+      display: block;
+      padding: 0 50px; }
+
+.signin-form {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s ease-in-out all; }
+
+.signin-form.ng-hide {
+  transform: translateX(-100%); }
+
+.signup-form {
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out all; }
+
+.signup-form.ng-hide {
+  transform: translateX(100%); }

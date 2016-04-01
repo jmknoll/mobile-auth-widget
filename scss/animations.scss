@@ -1,0 +1,20 @@
+//these animations still need a bit of work
+.signin-form {
+	position: absolute;
+	width: 100%;
+	transition: 0.5s ease-in-out all;
+}
+
+.signin-form.ng-hide {
+	transform: translateX(-100%);
+}
+
+.signup-form {
+	width: 100%;
+	position: absolute;
+	transition: 0.5s ease-in-out all;
+}
+
+.signup-form.ng-hide {
+	transform: translateX(100%);
+}

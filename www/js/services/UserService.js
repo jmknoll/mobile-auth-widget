@@ -4,7 +4,7 @@
 
 var app = angular.module('starter');
 
-app.factory('User', function($log, $scope, $http, $q){
+app.factory('User', function($log, $http, $q){
 
 	var apiUrl = 'http://www.example.com';
 

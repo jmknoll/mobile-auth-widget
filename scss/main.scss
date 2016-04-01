@@ -1,5 +1,9 @@
+$primaryTextColor: #fff;
+$secondaryTextColor: #000;
+
 html, body {
 	font-size: 16px;
+	color: $primaryTextColor;
 }
 
 .login-page {
@@ -8,7 +12,7 @@ html, body {
 
 	.brand-info-container {
 		text-align: center;
-		margin: 7vh 0 10vh 0;
+		margin: 7vh 0 7vh 0;
 
 		img.brand-logo {
 			max-width: 150px;
@@ -23,7 +27,25 @@ html, body {
 	}
 
 	.auth-container {
+		position: relative;
 
+		::-webkit-input-placeholder {
+			color: $primaryTextColor;
+		}
+
+		:-moz-placeholder {
+			color: $primaryTextColor;
+		}
+
+		::-moz-placeholder {
+			color: $primaryTextColor;
+		}
+
+		:-ms-input-placeholder {
+			color: $primaryTextColor;
+		}
+		
+		// form switch button styles
 		.col {
 			display: flex;
 			justify-content: center;
@@ -31,14 +53,17 @@ html, body {
 
 		p.form-button {
 			text-align: center;
-			opacity: 0.7;
+			//opacity: 0.7;
 			font-size: 1.2em;
 			display: table-cell;
 			padding: 0 0 3px 0;
+			color: $primaryTextColor;
+			font-weight: bold;
 		}
 
 		p.form-button.selected {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid $primaryTextColor;
+			opacity: 1.0;
 		}
 
 		p.form-button.selected:after {
@@ -46,22 +71,29 @@ html, body {
 			display: table-cell;
 			width: 100%;
 		}
-	
-		/*
-		.col {
-			display: flex;
-		}
-		
-		p.form-button {
-			text-align: center;
-			margin: auto;
-			display: table-cell;
-			border-bottom: 2px solid black;
-			padding: 0 0 3px 0;
+
+		// form styles
+
+		.item-input {
+			color: white;
+			border: none;
+			border-bottom: 1px solid $primaryTextColor;
+			width: 85%;
+			margin: 0 auto;
+
+			span {
+				color: $primaryTextColor;
+			}
+
+			input {
+				color: $primaryTextColor;
+			}
 		}
 
-		p.form-button.selected
+		button {
+			margin: 35px auto;
+			display: block;
+			padding: 0 50px;
 		}
-		*/
 	}
 }

@@ -1,7 +1,6 @@
 <ion-view view-title='Login' class='login-page'>
-	<ion-content>
 		<div class='brand-info-container'>
-			<img class='brand-logo' src='img/logo.png'>
+			<img class='brand-logo' src='img/logo_2.png'>
 			<div class='brand-content'>startup.io</div>
 		</div>
 		<div class='auth-container'>
@@ -13,12 +12,35 @@
 					<p class='form-button' ng-click='showSigninForm=false' ng-class="{ 'selected' : !showSigninForm}">Register</p>
 				</div>
 			</div>
-			<div class='signin-form' ng-show='showSigninForm'>
-				<h2>Auth state is currently signin</h2>
+			<div class='signin-form padding' ng-show='showSigninForm'>
+				<ion-list>
+					<label class='item item-input item-floating-label'>
+						<span class='input-label'>Email</span>
+						<input type='email' placeholder='Email'>
+					</label>
+					<label class='item item-input item-floating-label'>
+						<span class='input-label'>Password</span>
+						<input type='password' placeholder='Password'>
+					</label>
+					<button class='button button-positive' ng-click='signin'>Sign In</button>
+				</ion-list>
 			</div>
-			<div class='signup-form' ng-show='!showSigninForm'>
-				<h2>Auth state is currently signup</h2>
+			<div class='signup-form padding' ng-show='!showSigninForm'>
+				<ion-list>
+					<label class='item item-input item-floating-label'>
+						<span class='input-label'>Email</span>
+						<input type='email' placeholder='Email'>
+					</label>
+					<label class='item item-input item-floating-label'>
+						<span class='input-label'>Password</span>
+						<input type='password' placeholder='Password'>
+					</label>
+					<label class='item item-input item-floating-label'>
+						<span class='input-label'>Confirm Password</span>
+						<input type='password' placeholder='Confirm Password'>
+					</label>
+					<button class='button button-positive' ng-click='signup()'>Register</button>
+				</ion-list>
 			</div>
 		</div>
-	</ion-content>
 </ion-view>
