@@ -1,6 +1,9 @@
 # mobile-auth-widget
 
-user signin/signup widget for hybrid mobile apps. built specifically for ionic framework, but portable.
+User signin/signup widget for hybrid mobile apps. built specifically for ionic framework, but portable.
+
+Here's a screenshot: 
+![demo screenshot](https://jmknoll.github.com/mobile-auth-widget/www/img/docs.jpg)
 
 
 ## getting started
@@ -42,8 +45,8 @@ or, more likely
 
 all UI elements are vanilla HTML/CSS, and thus highly portable. To move to a new application, simply pay attention to the contents of the follow files:
 
-templates/login.html - main template
-scss/***.scss - sass files
+- templates/login.html - main template
+- scss/***.scss - sass files
 
 if you don't want to use sass, simply run the application, and you can find the compiled css at the bottom of www/css/ionic.app.css
 
@@ -64,5 +67,4 @@ $(#showSignup).click(function(){
 
 ## contributing
 
-if you'd like to make any improvements to this repo, please send me a message and/or open a pull request with your desired changes
-
+if you'd like to make any improvements to this repo, please send me a message and/or open a pull request with your desired changes: ![alt tag](http://url/to/img.png)
