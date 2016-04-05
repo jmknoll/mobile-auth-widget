@@ -1,25 +1,40 @@
-Ionic App Base
-=====================
-
-A starting project for Ionic that optionally supports using custom SCSS.
-
 # mobile-auth-widget
 
-We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+user signin/signup widget for hybrid mobile apps. built specifically for ionic framework, but portable.
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
+
+## getting started
+
+start by installing ionic and the ionic toolchain:
 
 ```bash
 $ npm install -g ionic
 ```
 
-Then run:
+clone this repo and navigate into it
 
 ```bash
-$ ionic start myProject tabs
+$ git clone https://github.com/jmknoll/mobile-auth-widget.git
+$ cd mobile-auth-widget
 ```
 
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
+install all dependencies:
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
+```bash
+$ npm install && bower install
+```
+
+and run the app
+
+```bash
+$ ionic serve
+```
+
+## usage
+
+
+
+## contributing
+
+if you'd like to make any improvements to this repo, please send me a message and/or open a pull request with your desired changes
+
