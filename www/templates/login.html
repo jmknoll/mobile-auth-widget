@@ -6,10 +6,10 @@
 	<div class='auth-container'>
 		<div class='row'>
 			<div class='col'>
-				<p class='form-button' ng-click='showSigninForm=true' ng-class="{ 'selected' : showSigninForm}">Login</p>
+				<p id='showSignin' class='form-button' ng-click='showSigninForm=true' ng-class="{ 'selected' : showSigninForm}">Login</p>
 			</div>
 			<div class='col'>
-				<p class='form-button' ng-click='showSigninForm=false' ng-class="{ 'selected' : !showSigninForm}">Register</p>
+				<p id='showSignup' class='form-button' ng-click='showSigninForm=false' ng-class="{ 'selected' : !showSigninForm}">Register</p>
 			</div>
 		</div>
 		<div class='signin-form padding' ng-show='showSigninForm'>
