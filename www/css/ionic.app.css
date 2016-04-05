@@ -9790,18 +9790,42 @@ html, body {
       display: block;
       padding: 0 50px; }
 
+@-webkit-keyframes slideToLeft {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+
+@-webkit-keyframes slideToRight {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(100%); } }
+
+@-webkit-keyframes slideFromRight {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0); } }
+
 .signin-form {
   position: absolute;
   width: 100%;
-  transition: 0.5s ease-in-out all; }
+  -webkit-animation: slideFromLeft 0.6s ease-in-out; }
 
 .signin-form.ng-hide {
-  transform: translateX(-100%); }
+  -webkit-animation: slideToLeft 0.6s ease-in-out; }
 
 .signup-form {
   width: 100%;
   position: absolute;
-  transition: 0.5s ease-in-out all; }
+  -webkit-animation: slideFromRight 0.6s ease-in-out; }
 
 .signup-form.ng-hide {
-  transform: translateX(100%); }
+  -webkit-animation: slideToRight 0.6s ease-in-out; }

@@ -13,7 +13,7 @@ app.controller('UserCtrl', function($scope, $log, User){
 	$scope.credentials = {};
 
 	$scope.signin = function(){
-		User.signin($scope.credentials)
+		return User.signin($scope.credentials)
 		.then(function(){
 			$log.info('User logged in.');
 		}, function(err){
@@ -23,7 +23,7 @@ app.controller('UserCtrl', function($scope, $log, User){
 	};
 
 	$scope.signup = function(){
-		User.signup($scope.credentials)
+		return User.signup($scope.credentials)
 		.then(function(){
 			$log.info('User signed up.');	
 		}, function(err){
